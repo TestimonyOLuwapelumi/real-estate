@@ -16,10 +16,10 @@ const Location = () => {
 
 
   {location.map((item, index) => (         
-		<div className="relative flex items-end justify-start w-full text-left bg-center bg-cover h-72 " style={{backgroundImage: `url(${item.cover})`}}>
+		<div className="relative flex items-end justify-start w-full text-left bg-center bg-cover h-72 " style={{backgroundImage: `url(${item.cover})`}} key={index}>
 			<div className="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b "></div>
 			<div className="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
-				<a rel="noopener noreferrer" lassName="px-3 py-2 text-xs font-semibold tracki uppercase   bgundefined"></a>
+				<a rel="noopener noreferrer" className="px-3 py-2 text-xs font-semibold tracki uppercase   bgundefined"></a>
 				<div className="flex flex-col justify-start text-center  ">
 					<span className="text-3xl font-semibold leadi tracki">{item.Villas}</span>
 					<span className="leadi uppercase"></span>

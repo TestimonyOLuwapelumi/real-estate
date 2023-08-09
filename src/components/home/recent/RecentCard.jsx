@@ -45,7 +45,7 @@ const RecentCard = () => {
           const { cover, category, location, name, price, type } = val
           return (
 
-			<a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group  bg-gray-50 drop-shadow-lg">
+			<a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group  bg-gray-50 drop-shadow-lg" key={index}>
 				<img role="presentation" className="object-cover w-full rounded h-72 " src={cover} />
 				<div className="p-6 space-y-2">
         <span style={{ background: category === "For Sale" ? "#25b5791a" : "#ff98001a", color: category === "For Sale" ? "#25b579" : "#ff9800" }}>{category}<i className='fa fa-heart ml-24'></i></span>
