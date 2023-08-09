@@ -47,6 +47,8 @@ const PriceCard = () => {
           </div>
         ))}
       </div>
+
+      
     </>
   )
 }

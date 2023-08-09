@@ -50,14 +50,18 @@ header .toggle {
   header .toggle {
     display: block;
     margin-top: 20px;
+    z-index: 100000;
   }
   header .small {
     position: absolute;
     top: 10vh;
     left: 0;
-    width: 100%;
+    width: 50%;
     background-color: #27ae60;
     padding: 20px;
+    top: 0;
+    right: 0;
+margin-left: 200px;
   }
   header li a {
     display: inline-block;
